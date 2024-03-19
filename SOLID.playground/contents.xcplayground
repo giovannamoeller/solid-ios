@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='SOLID - Single Responsability Principle (Ruim)'/>
+        <page name='SOLID - Single Responsability Principle (Bom)'/>
+        <page name='SOLID - Open Closed Principle (Ruim)'/>
+        <page name='SOLID - Open Closed Principle (Bom)'/>
+        <page name='SOLID - Liskov Substitution Principle (Ruim)'/>
+        <page name='SOLID - Liskov Substitution Principle (Bom)'/>
+        <page name='SOLID - Interface Segregation Principle (Ruim)'/>
+        <page name='SOLID - Interface Segregation Principle (Bom)'/>
+        <page name='SOLID - Dependency Inversion Principle (Ruim)'/>
+        <page name='SOLID - Dependency Inversion Principle (Bom)'/>
+        <page name='SOLID - Open Closed Principle 02 (Ruim)'/>
+        <page name='SOLID - Open Closed Principle 02 (Bom)'/>
+        <page name='SOLID - Interface Segregation Principle 02 (Ruim)'/>
+        <page name='SOLID - Interface Segregation Principle 02 (Bom)'/>
+        <page name='SOLID - Dependency Inversion Principle 02 (Bom)'/>
+        <page name='SOLID - Liskov Substitution Principle 02 (Ruim)'/>
+        <page name='SOLID - Liskov Substitution Principle 02 (Bom)'/>
+        <page name='SOLID - Dependency Inversion Princle 02 (Bom)'/>
+    </pages>
+</playground>
