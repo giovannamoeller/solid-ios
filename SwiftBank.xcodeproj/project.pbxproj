@@ -11,6 +11,7 @@
 		48967A982BA9CD1A0055F6F8 /* TransactionHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967A972BA9CD1A0055F6F8 /* TransactionHistoryService.swift */; };
 		48967A9A2BA9CE460055F6F8 /* BankOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967A992BA9CE460055F6F8 /* BankOperation.swift */; };
 		48967A9D2BA9CF010055F6F8 /* FrozenAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967A9C2BA9CF010055F6F8 /* FrozenAccount.swift */; };
+		48967A9F2BA9D0170055F6F8 /* CheckingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967A9E2BA9D0170055F6F8 /* CheckingAccount.swift */; };
 		48BD84D22B8E6E7F007F2460 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD84D12B8E6E7F007F2460 /* Double+.swift */; };
 		48BD84D42B8E71E4007F2460 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD84D32B8E71E4007F2460 /* Color+.swift */; };
 		48D023992BA3F7CC0008B0BE /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D023982BA3F7CC0008B0BE /* BankAccount.swift */; };
@@ -35,6 +36,7 @@
 		48967A972BA9CD1A0055F6F8 /* TransactionHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryService.swift; sourceTree = "<group>"; };
 		48967A992BA9CE460055F6F8 /* BankOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOperation.swift; sourceTree = "<group>"; };
 		48967A9C2BA9CF010055F6F8 /* FrozenAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenAccount.swift; sourceTree = "<group>"; };
+		48967A9E2BA9D0170055F6F8 /* CheckingAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingAccount.swift; sourceTree = "<group>"; };
 		48BD84D12B8E6E7F007F2460 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		48BD84D32B8E71E4007F2460 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		48D023982BA3F7CC0008B0BE /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				48967A9C2BA9CF010055F6F8 /* FrozenAccount.swift */,
+				48967A9E2BA9D0170055F6F8 /* CheckingAccount.swift */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F0A5F12B8983C3000AD05E /* SBTitleLabel.swift in Sources */,
+				48967A9F2BA9D0170055F6F8 /* CheckingAccount.swift in Sources */,
 				48F0A5CC2B8950C0000AD05E /* HomeViewController.swift in Sources */,
 				48BD84D42B8E71E4007F2460 /* Color+.swift in Sources */,
 				48F0A5E82B897CB7000AD05E /* UIViewController+.swift in Sources */,

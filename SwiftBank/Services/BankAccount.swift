@@ -11,13 +11,15 @@ protocol BankingServiceDelegate: AnyObject {
     func didPerformOperation()
 }
 
-protocol AccountServices {
-    func performOperation(operation: BankOperation, amount: Double) -> Bool
-    func requestLoan(amount: Double)
+protocol InterestingRate {
     func calculateInterestRate()
 }
 
-class BankAccount: AccountServices {
+protocol LoanableAccount {
+    func requestLoan(amount: Double)
+}
+
+class BankAccount {
     
     var balance: Double = 0.0
     var accountNumber: String
@@ -36,14 +38,6 @@ class BankAccount: AccountServices {
             return false
         }
         return operation.execute(in: self, amount: amount)
-    }
-    
-    func requestLoan(amount: Double) {
-        // Pedir um empréstimo
-    }
-    
-    func calculateInterestRate() {
-        // Calcular taxa de juros
     }
     
 }
