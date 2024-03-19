@@ -8,6 +8,7 @@
 import Foundation
 
 protocol TransactionHistoryProtocol {
+    var transactions: [String] { get set }
     func addTransaction(message: String)
 }
 

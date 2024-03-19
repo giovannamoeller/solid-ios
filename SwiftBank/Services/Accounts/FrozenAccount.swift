@@ -8,7 +8,7 @@
 import Foundation
 
 class FrozenAccount: BankAccount {
-    override init(accountNumber: String) {
+    init(accountNumber: String) {
         super.init(accountNumber: accountNumber)
         isFrozen = true
     }
