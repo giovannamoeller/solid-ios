@@ -163,13 +163,13 @@ extension HomeViewController: BankingServiceDelegate {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bankAccount.transactionsHistory.count
+        return bankAccount.transactionHistoryService.transactions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "extractCell", for: indexPath)
         var configuration = cell.defaultContentConfiguration()
-        configuration.text = bankAccount.transactionsHistory[indexPath.row]
+        configuration.text = bankAccount.transactionHistoryService.transactions[indexPath.row]
         configuration.secondaryText = Date().formatCurrentDate()
         configuration.textProperties.numberOfLines = 0
         configuration.textProperties.color = Colors.graphite ?? .graphite

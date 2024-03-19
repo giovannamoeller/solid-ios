@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48967A962BA9CD110055F6F8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967A952BA9CD110055F6F8 /* NotificationService.swift */; };
+		48967A982BA9CD1A0055F6F8 /* TransactionHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967A972BA9CD1A0055F6F8 /* TransactionHistoryService.swift */; };
 		48BD84D22B8E6E7F007F2460 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD84D12B8E6E7F007F2460 /* Double+.swift */; };
 		48BD84D42B8E71E4007F2460 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD84D32B8E71E4007F2460 /* Color+.swift */; };
 		48D023992BA3F7CC0008B0BE /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D023982BA3F7CC0008B0BE /* BankAccount.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48967A952BA9CD110055F6F8 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		48967A972BA9CD1A0055F6F8 /* TransactionHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryService.swift; sourceTree = "<group>"; };
 		48BD84D12B8E6E7F007F2460 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		48BD84D32B8E71E4007F2460 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		48D023982BA3F7CC0008B0BE /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				48D023982BA3F7CC0008B0BE /* BankAccount.swift */,
+				48967A952BA9CD110055F6F8 /* NotificationService.swift */,
+				48967A972BA9CD1A0055F6F8 /* TransactionHistoryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -222,6 +228,8 @@
 				48F0A5E02B89520F000AD05E /* WithdrawViewController.swift in Sources */,
 				48F0A5DE2B8951CD000AD05E /* DepositViewController.swift in Sources */,
 				48D8316F2B8E20480061D339 /* Date+.swift in Sources */,
+				48967A962BA9CD110055F6F8 /* NotificationService.swift in Sources */,
+				48967A982BA9CD1A0055F6F8 /* TransactionHistoryService.swift in Sources */,
 				48F0A5ED2B89824F000AD05E /* SBTextField.swift in Sources */,
 				48BD84D22B8E6E7F007F2460 /* Double+.swift in Sources */,
 				48F0A5EA2B898085000AD05E /* UITextField+.swift in Sources */,

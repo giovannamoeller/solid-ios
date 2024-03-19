@@ -25,7 +25,9 @@ class BankAccount: AccountServices {
     
     var balance: Double = 0.0
     var accountNumber: String
-    var transactionsHistory: [String] = []
+    
+    var notificationService = NotificationService()
+    var transactionHistoryService = TransactionHistoryService()
     
     init(accountNumber: String) {
         self.accountNumber = accountNumber
@@ -36,22 +38,17 @@ class BankAccount: AccountServices {
         case .withdraw:
             if amount <= balance {
                 balance -= amount
-                sendNotification(message: "Saque no valor de \(amount.formatCurrency()) realizado!")
-                transactionsHistory.insert("Saque no valor de \(amount.formatCurrency())", at: 0)
+                notificationService.sendNotification(message: "Saque no valor de \(amount.formatCurrency()) realizado!")
+                transactionHistoryService.addTransaction(message: "Saque no valor de \(amount.formatCurrency())")
                 return true
             }
             return false
         case .deposit:
             balance += amount
-            sendNotification(message: "Depósito no valor de \(amount.formatCurrency()) realizado!")
-            transactionsHistory.insert("Depósito no valor de \(amount.formatCurrency())", at: 0)
+            notificationService.sendNotification(message: "Depósito no valor de \(amount.formatCurrency()) realizado!")
+            transactionHistoryService.addTransaction(message: "Depósito no valor de \(amount.formatCurrency())")
             return true
         }
-    }
-    
-    func sendNotification(message: String) {
-        // Enviar notificação para o usuário
-        print(message)
     }
     
     func requestLoan(amount: Double) {
