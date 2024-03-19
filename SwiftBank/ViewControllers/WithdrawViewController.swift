@@ -73,7 +73,9 @@ class WithdrawViewController: UIViewController {
         if withdrawValue <= 0 { return }
         let withdrawValueFormatted = withdrawValue.formatCurrency()
         
-        let withdrawSuccess = bankAccount.performOperation(operation: .withdraw, amount: withdrawValue)
+        let withdrawOperation = WithdrawOperation()
+        
+        let withdrawSuccess = bankAccount.performOperation(operation: withdrawOperation, amount: withdrawValue)
         
         if withdrawSuccess {
             delegate?.didPerformOperation()

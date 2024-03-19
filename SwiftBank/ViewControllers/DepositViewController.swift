@@ -73,7 +73,9 @@ class DepositViewController: UIViewController {
         if depositValue <= 0 { return }
         let depositValueFormatted = depositValue.formatCurrency()
         
-        let depositSuccess = bankAccount.performOperation(operation: .deposit, amount: depositValue)
+        let depositOperation = DepositOperation()
+        
+        let depositSuccess = bankAccount.performOperation(operation: depositOperation, amount: depositValue)
         
         if depositSuccess {
             delegate?.didPerformOperation()
