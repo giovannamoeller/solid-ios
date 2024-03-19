@@ -7,7 +7,11 @@
 
 import Foundation
 
-class TransactionHistoryService {
+protocol TransactionHistoryProtocol {
+    func addTransaction(message: String)
+}
+
+class TransactionHistoryService: TransactionHistoryProtocol {
     var transactions: [String] = []
     
     func addTransaction(message: String) {

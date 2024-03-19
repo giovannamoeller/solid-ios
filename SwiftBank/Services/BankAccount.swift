@@ -25,11 +25,15 @@ class BankAccount {
     var accountNumber: String
     var isFrozen: Bool = false
     
-    var notificationService = NotificationService()
-    var transactionHistoryService = TransactionHistoryService()
+    var notificationService: NotificationServiceProtocol
+    var transactionHistoryService: TransactionHistoryProtocol
     
-    init(accountNumber: String) {
+    init(accountNumber: String,
+         notificationService: NotificationServiceProtocol = NotificationService(),
+         transactionHistoryService: TransactionHistoryProtocol = TransactionHistoryService()) {
         self.accountNumber = accountNumber
+        self.notificationService = notificationService
+        self.transactionHistoryService = transactionHistoryService
     }
     
     func performOperation(operation: BankOperation, amount: Double) -> Bool {
