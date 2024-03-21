@@ -1,37 +1,57 @@
 //: [Previous](@previous)
 
-//: ### OCP - Sistema de pedidos (Ruim)
+//: ### OCP - Sistema de E-commerce (Ruim)
+
+import Foundation
+
 class Product {
     let name: String
     let price: Double
-
+    
     init(name: String, price: Double) {
         self.name = name
         self.price = price
     }
 }
 
-class Order {
-    var items: [Product]
+class Invoice {
+    var products: [Product]
     
-    init(items: [Product]) {
-        self.items = items
+    init(products: [Product]) {
+        self.products = products
     }
-    
-    func calculateTotal() -> Double {
+
+    var total: Double {
         var total = 0.0
-        for product in items {
+        for product in products {
             total += product.price
         }
         return total
     }
 }
 
-let orderItems: [Product] = [
-    Product(name: "Macbook", price: 8.000),
-    Product(name: "iPhone", price: 3.000)
+class InvoicePersistence {
+    let invoice: Invoice
+    
+    init(invoice: Invoice) {
+        self.invoice = invoice
+    }
+
+    func saveInvoiceToCoreData() {
+        print("Salvando nota fiscal no core data")
+    }
+
+    func saveInvoiceToDatabase() {
+        print("Saving nota fiscal no banco de dados")
+    }
+}
+
+let products = [
+    Product(name: "Macbook", price: 8000),
+    Product(name: "iPhone", price: 3200)
 ]
-let order = Order(items: orderItems)
-print(order.calculateTotal())
+let invoice = Invoice(products: products)
+let invoicePersistence = InvoicePersistence(invoice: invoice)
+invoicePersistence.saveInvoiceToCoreData()
 
 //: [Next](@next)
